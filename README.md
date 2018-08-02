@@ -14,14 +14,16 @@ Summary: Provides functions for robust trimmed clustering. The methods are descr
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/r-tclust-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/r-tclust-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/r-tclust-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/r-tclust-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/r-tclust-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/r-tclust-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-tclust-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-tclust-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/r-tclust-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-tclust-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-tclust-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-tclust-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-tclust/badges/version.svg)](https://anaconda.org/conda-forge/r-tclust)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-tclust/badges/downloads.svg)](https://anaconda.org/conda-forge/r-tclust)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-r--tclust-green.svg)](https://anaconda.org/conda-forge/r-tclust) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-tclust.svg)](https://anaconda.org/conda-forge/r-tclust) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-tclust.svg)](https://anaconda.org/conda-forge/r-tclust) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-tclust.svg)](https://anaconda.org/conda-forge/r-tclust) |
 
 Installing r-tclust
 ===================
