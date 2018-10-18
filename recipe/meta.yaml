@@ -33,7 +33,6 @@ requirements:
     - r-mclust
     - r-mvtnorm
     - r-sn
-
   run:
     - r-base
     - r-cluster
