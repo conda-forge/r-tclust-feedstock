@@ -14,7 +14,7 @@ source:
 
 build:
   merge_build_host: True  # [win]
-  number: 1
+  number: 2
   skip: true  # [win32]
   rpaths:
     - lib/R/lib/
@@ -33,7 +33,6 @@ requirements:
     - r-mclust
     - r-mvtnorm
     - r-sn
-
   run:
     - r-base
     - r-cluster
@@ -56,6 +55,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - dpryan79
     - bgruening
     - daler
     - johanneskoester
