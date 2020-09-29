@@ -1,4 +1,4 @@
-{% set version = '1.4-1' %}
+{% set version = "1.4-2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tclust_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tclust/tclust_{{ version }}.tar.gz
-  sha256: 4b0be612c8ecd7b4eb19a44ab6ac8f5d40515600ae1144c55989b6b41335ad9e
+  sha256: 95dcd07dbd16383f07f5cea8561e7f3bf314e4a7483879841103b149fc8c65d9
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -44,11 +44,9 @@ test:
 about:
   home: https://CRAN.R-project.org/package=tclust
   license: GPL-3
-  summary: Provides functions for robust trimmed clustering. The methods are described in Garcia-Escudero
-    (2008) <doi:10.1214/07-AOS515>, Fritz et al. (2012) <doi:10.18637/jss.v047.i12>
-    and others.
+  summary: Provides functions for robust trimmed clustering. The methods are described in Garcia-Escudero (2008) <doi:10.1214/07-AOS515>, Fritz et al. (2012) <doi:10.18637/jss.v047.i12> and others.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
