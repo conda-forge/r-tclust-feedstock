@@ -43,15 +43,16 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=tclust
-  license: GPL-3
+  license: GPL-3.0-only
   summary: Provides functions for robust trimmed clustering. The methods are described in Garcia-Escudero (2008) <doi:10.1214/07-AOS515>, Fritz et al. (2012) <doi:10.18637/jss.v047.i12> and others.
   license_family: GPL3
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
-    - rvalieris
     - conda-forge/r
+    - rvalieris
 
 # Package: tclust
 # Version: 1.4-1
