@@ -3,6 +3,7 @@ About r-tclust-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-tclust-feedstock/blob/main/LICENSE.txt)
 
+
 About r-tclust
 --------------
 
@@ -11,6 +12,7 @@ Home: https://CRAN.R-project.org/package=tclust
 Package license: GPL-3.0-only
 
 Summary: Provides functions for robust trimmed clustering. The methods are described in Garcia-Escudero (2008) <doi:10.1214/07-AOS515>, Fritz et al. (2012) <doi:10.18637/jss.v047.i12> and others.
+
 About r-tclust
 --------------
 
@@ -153,7 +155,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
