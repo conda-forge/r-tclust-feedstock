@@ -1,4 +1,4 @@
-{% set version = "1.5-6" %}
+{% set version = "2.0-3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tclust_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tclust/tclust_{{ version }}.tar.gz
-  sha256: 1e5ea0b8e05fb4036478fd00ef8c92296cb345bd0807a8ab3998333a2b2afedc
+  sha256: 46bb1cc8014944f9d555d21333de936bdfce70f8ecf4a910ff3f9e4cd4391550
 
 build:
   merge_build_host: true  # [win]
