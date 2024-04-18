@@ -32,8 +32,18 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
+    - r-mass
+    - r-foreach
+    - r-doparallel
+    - r-rcpp
+    - r-rcpparmadillo
   run:
     - r-base
+    - r-mass
+    - r-foreach
+    - r-doparallel
+    - r-rcpp
+    - r-rcpparmadillo
     - {{ native }}gcc-libs         # [win]
 
 test:
