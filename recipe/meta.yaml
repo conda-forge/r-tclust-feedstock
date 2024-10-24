@@ -1,4 +1,4 @@
-{% set version = "2.0-4" %}
+{% set version = "2.0-5" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tclust_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tclust/tclust_{{ version }}.tar.gz
-  sha256: a6667167778b974afc968340161171a7911415bcc1220dc7f0f350552f560578
+  sha256: 17c81d2f54ba52a299eadac028e2bac56fcbdb10bedfa10a4ca6167ff156a8bf
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
