@@ -37,6 +37,7 @@ requirements:
     - r-doparallel
     - r-rcpp
     - r-rcpparmadillo
+    - r-ellipsis
   run:
     - r-base
     - r-mass
@@ -44,6 +45,7 @@ requirements:
     - r-doparallel
     - r-rcpp
     - r-rcpparmadillo
+    - r-ellipsis
 
 test:
   commands:
