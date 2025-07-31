@@ -1,4 +1,4 @@
-{% set version = "2.1-0" %}
+{% set version = "2.1-2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,13 +9,17 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tclust_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tclust/tclust_{{ version }}.tar.gz
-  sha256: b3effd8ab061150b21020a24fc809d1043676002370a2d4971944120eab2a9ef
+  sha256: 0531bb2e379b53bf11d4439240c1ca8080b36b2a4ea6b2962825514a657fb974
 
 build:
   number: 0
   rpaths:
     - lib/R/lib/
     - lib/
+  missing_dso_whitelist:
+    - '*/R.dll'        # [win]
+    - '*/Rblas.dll'    # [win]
+    - '*/Rlapack.dll'  # [win]
 
 requirements:
   build:
@@ -33,19 +37,19 @@ requirements:
   host:
     - r-base
     - r-mass
-    - r-foreach
-    - r-doparallel
-    - r-rcpp
+    - r-rcpp >=1.0.7
     - r-rcpparmadillo
-    - r-ellipsis
+    - r-doparallel
+    - r-foreach
+    - r-rlang
   run:
     - r-base
     - r-mass
-    - r-foreach
-    - r-doparallel
-    - r-rcpp
+    - r-rcpp >=1.0.7
     - r-rcpparmadillo
-    - r-ellipsis
+    - r-doparallel
+    - r-foreach
+    - r-rlang
 
 test:
   commands:
