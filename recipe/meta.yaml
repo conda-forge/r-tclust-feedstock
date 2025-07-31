@@ -16,6 +16,10 @@ build:
   rpaths:
     - lib/R/lib/
     - lib/
+  missing_dso_whitelist:
+    - '*/R.dll'        # [win]
+    - '*/Rblas.dll'    # [win]
+    - '*/Rlapack.dll'  # [win]
 
 requirements:
   build:
@@ -33,19 +37,19 @@ requirements:
   host:
     - r-base
     - r-mass
-    - r-foreach
-    - r-doparallel
-    - r-rcpp
+    - r-rcpp >=1.0.7
     - r-rcpparmadillo
-    - r-ellipsis
+    - r-doparallel
+    - r-foreach
+    - r-rlang
   run:
     - r-base
     - r-mass
-    - r-foreach
-    - r-doparallel
-    - r-rcpp
+    - r-rcpp >=1.0.7
     - r-rcpparmadillo
-    - r-ellipsis
+    - r-doparallel
+    - r-foreach
+    - r-rlang
 
 test:
   commands:
