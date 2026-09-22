@@ -1,15 +1,15 @@
-{% set version = "2.2-0" %}
+{% set version = "2.2-3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
   name: r-tclust
-  version: "{{ version|replace("-", "_") }}"
+  version: {{ version|replace("-", "_") }}
 
 source:
   url:
     - {{ cran_mirror }}/src/contrib/tclust_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tclust/tclust_{{ version }}.tar.gz
-  sha256: 648907d818a3137348a17b182a2f6418ef4f9bb4ca192b32f23da0cdff42d8e0
+  sha256: 9c714332fbfa0a8b8aa98cb5121dd65e6d327f5929cc3291dd90471705f44dfc
 
 build:
   number: 0
